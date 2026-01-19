@@ -8,8 +8,8 @@ echo "Updating system packages..."
 sudo apt update && sudo apt upgrade -y
 
 read -p "Enter your Ethernet interface name (e.g., eth0): " ETH_INTERFACE
-read -p "Enter the static IP you want to assign (e.g., 192.168.X.X/24): " STATIC_IP
-read -p "Enter your router gateway IP (e.g., 192.168.X.1): " GATEWAY
+read -p "Enter the static IP you want to assign (e.g., 127.X.X.X/24): " STATIC_IP
+read -p "Enter your router gateway IP (e.g., 127.X.X.1): " GATEWAY
 read -p "Enter the admin password for Pi-hole web interface: " ADMIN_PASSWORD
 echo "Choose upstream DNS providers (comma-separated, e.g., 1.1.1.1,9.9.9.9): "
 read UPSTREAM_DNS
